@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: green;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: lightgreen; /* Change hover color for better visibility */
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: green;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 15px 0;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s; /* Add transition for hover effect */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add transition for button hover effect */
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative; /* Change to relative for proper placement */
+    margin-top: 20px; /* Add margin-top for spacing */
+}
+
+#cart {
+    margin-top: 30px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: white;
+}
+
+#cart-items p {
+    margin: 5px 0; /* Add spacing for cart items */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Stack navigation items on smaller screens */
+        margin: 5px 0; /* Add margin for better spacing */
+    }
+
+    .product {
+        margin: 10px 0; /* Reduce margin on mobile */
+    }
+
+    button {
+        width: 100%; /* Make buttons full-width on mobile */
+    }
+}
